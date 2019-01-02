@@ -4,6 +4,9 @@
   "description": "JS Library to help people with math calculations",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build:tsc && npm run start:node",
+    "build:tsc": "tsc src/main.ts",
+    "start:node": "node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/michaelnem/math-helper/issues"
   },
-  "homepage": "https://github.com/michaelnem/math-helper#readme"
+  "homepage": "https://github.com/michaelnem/math-helper#readme",
+  "devDependencies": {
+    "typescript": "^3.2.2"
+  }
 }
